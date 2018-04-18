@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    생성자에서 param을 받고 있는 경우에는
+    <constructor-arg value=""/>
+    또는 <constructor-arg><value>값</value></con~~>를 사용한다 (property 대신에)
+    -->
+
+
+    <bean id = "student1" class = "Student">
+        <constructor-arg value = "황지원"/>
+        <constructor-arg value = "23살"/>
+        <constructor-arg value = "4학년"/>
+        <constructor-arg value = "3반"/>
+    </bean>
+
+    <bean id ="student2" class="Student">
+        <constructor-arg>
+            <value>황지웅</value>
+        </constructor-arg>
+        <constructor-arg value = "18살"/>
+        <constructor-arg value = "2학년"/>
+        <constructor-arg value = "8반"/>
+    </bean>
+
+    <bean id ="studentInfo" class="StudentInfo">
+       <constructor-arg>
+        <ref bean = "student1"/>
+       </constructor-arg>
+    </bean>
+</beans>
