@@ -36,6 +36,7 @@
             <value>comicbook</value>
             </list>
         </property>
+
         <property name="bmiCalculator">
             <ref bean="bmiCalculator"/>
         </property>
