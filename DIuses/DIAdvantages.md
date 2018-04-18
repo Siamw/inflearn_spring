@@ -14,9 +14,9 @@ ctx.close();
 
 >xml file
 <pre><code>
-//<bean id="pencil" class="Pencil4B"> //4B 굵기로 쓰입니다.
-//<bean id="pencil" class="Pencil6B"> //6B 굵기로 쓰입니다.
-//<bean id="pencil" class="Pencil6BWithEraser"> //6B 굵기로 쓰이고, 지우개가 있습니다.
+//bean id="pencil" class="Pencil4B"> //4B 굵기로 쓰입니다.
+//bean id="pencil" class="Pencil6B"> //6B 굵기로 쓰입니다.
+//bean id="pencil" class="Pencil6BWithEraser"> //6B 굵기로 쓰이고, 지우개가 있습니다.
 </code></pre>
 
 
